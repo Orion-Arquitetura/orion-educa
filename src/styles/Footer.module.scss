@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Kite+One&display=swap');
+
+.footer {
+    background-color: #15323A;
+    display: flex;
+    padding: 5% 0;
+}
+
+.footer-first-div {
+    flex-basis: 40%;
+    display: flex;
+    justify-content: flex-end;
+
+    &>div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    & ul {
+        display: flex;
+    }
+}
+
+.footer-second-div {
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+
+    & h1 {
+        margin-left: 5%;
+        color: white;
+        font-weight: 400;
+        font-size: 31px;
+        font-family: 'Kite One', sans-serif;
+    }
+}
