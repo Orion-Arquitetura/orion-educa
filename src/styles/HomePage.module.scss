@@ -43,8 +43,7 @@
 .section-2 {
     padding-bottom: 4%;
     & ul {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        display: flex;
         padding: 5% 4%;
         column-gap: 5%;
     }

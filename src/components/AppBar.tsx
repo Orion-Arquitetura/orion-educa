@@ -20,7 +20,7 @@ export default function AppBar() {
               <Link href={"/"}>Home</Link>
             </li>
             <li>
-              <Link href={"/"}>Cursos</Link>
+              <Link href={"/cursos"}>Cursos</Link>
             </li>
             <li>
               <Link href={"/"}>Quem somos</Link>
