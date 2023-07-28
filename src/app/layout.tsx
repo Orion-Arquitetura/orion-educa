@@ -15,6 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
+      <link rel="icon" href="/orion-estrela.png" sizes="any" />
       <body style={{backgroundImage: "url('/background.png')", backgroundSize: "70%"}}>
           <AppBar />
           {children}
