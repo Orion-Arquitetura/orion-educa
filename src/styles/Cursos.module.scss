@@ -5,6 +5,11 @@
         width: 30%;
         display: block;
         margin-inline: auto;
+
+        @media (max-width: 900px) {
+            width: 60vw;
+            max-width: 225px;
+        }
     }
 
     & .input-div {
@@ -31,11 +36,24 @@
             padding: 13px 20px;
             font-size: 16px;
             background-color: #2c6c7236;
-            backdrop-filter: blur(1px);
             color: #2c6c72;
 
             &::placeholder {
-                color: #2c6c72;
+                color: #2C6C72;
+            }
+        }
+
+        @media (max-width: 900px) {
+            width: 80vw;
+
+            &::after {
+                background-color: #F2F2F2;
+            }
+
+            input {
+                &::placeholder {
+                    color: #FFFFFF00;
+                }
             }
         }
     }
@@ -51,5 +69,12 @@
         flex-wrap: wrap;
         justify-content: space-between;
         row-gap: 64px;
+    }
+
+    @media (max-width: 900px) {
+        ul {
+            padding: 0;
+            justify-content: center;
+        }
     }
 }

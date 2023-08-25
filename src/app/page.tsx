@@ -13,13 +13,13 @@ export default function Home() {
           <div className={styles["text-div"]}>
             <h1>
               <i>
-                O que você pode <br /> aprender com a gente:
+                O que você pode aprender com a gente:
               </i>{" "}
               <br />
             </h1>
             <p>
               <i>
-                Dicas e cursos específicos das disciplinas <br /> que usamos no nosso
+                Dicas e cursos específicos das disciplinas que usamos no nosso
                 dia a dia
               </i>
             </p>
@@ -34,10 +34,10 @@ export default function Home() {
 
         <div className={styles["list-div"]}>
           <ul>
-            <RoundListItem imgHref="/icon-book.svg" alt="Monte seu plano de estudos" />
-            <RoundListItem imgHref="/icon-location.svg" alt="Veja as aulas no seu tempo!" />
-            <RoundListItem imgHref="/icon-olho.svg" alt="Veja as aulas em qualquer lugar!" />
-            <RoundListItem imgHref="/icon-chat.svg" alt="Encaminhe suas dúvidas!" />
+            <RoundListItem imgHref="/livro.png" alt="Monte seu plano de estudos" />
+            <RoundListItem imgHref="/location.png" alt="Veja as aulas no seu tempo!" />
+            <RoundListItem imgHref="/olho.png" alt="Veja as aulas em qualquer lugar!" />
+            <RoundListItem imgHref="chat.png" alt="Encaminhe suas dúvidas!" />
           </ul>
         </div>
       </section>
@@ -46,9 +46,7 @@ export default function Home() {
           <CursoCard />
           <CursoCard />
           <CursoCard />
-          <CursoCard />
         </ul>
-
         <BotaoMaisCursos />
       </section>
     </main>

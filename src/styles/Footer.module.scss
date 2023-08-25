@@ -1,8 +1,13 @@
-
 .footer {
     background-color: #15323A;
     display: flex;
     padding: 5% 0;
+
+    @media(max-width: 900px) {
+        justify-content: center;
+        padding: 20% 0;
+        flex-direction: column-reverse;
+    }
 }
 
 .footer-first-div {
@@ -19,6 +24,10 @@
     & ul {
         display: flex;
     }
+
+    @media(max-width: 900px) {
+        justify-content: center;
+    }
 }
 
 .footer-second-div {
@@ -32,5 +41,15 @@
         font-weight: 400;
         font-size: 31px;
         font-family: 'Kite One', sans-serif;
+    }
+
+    @media(max-width: 900px) {
+        justify-content: center;
+
+        h1 {
+            font-size: 20px;
+            text-align: center;
+            margin: 0;
+        }
     }
 }
