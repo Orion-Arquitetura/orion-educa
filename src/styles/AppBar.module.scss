@@ -8,6 +8,23 @@
     }
 }
 
+.logo {
+    &[src='/bandeira-gptw.svg'] {
+        width: 80px;
+        position: absolute;
+        top: 30px;
+    }
+
+    &[src='/orion-logo-header.svg'] {
+        width: 150px;
+
+    }
+
+    @media (max-width: 900px) {
+        display: none;
+    }
+}
+
 .header-bar {
     height: 30px;
     width: 100%;
@@ -20,7 +37,7 @@
     padding-top: 20px;
     padding-bottom: 8px;
     justify-content: space-between;
-
+    
     @media (max-width: 900px) {
         flex-direction: column;
         align-items: center;
@@ -34,7 +51,7 @@
     flex-grow: 1;
     justify-content: flex-end;
     align-items: flex-end;
-    
+
     @media (max-width: 900px) {
         width: 100%;
         flex-direction: column;
@@ -75,7 +92,5 @@
         }
     }
 
-    @media (max-width: 900px) {
-       
-    }
+    @media (max-width: 900px) {}
 }

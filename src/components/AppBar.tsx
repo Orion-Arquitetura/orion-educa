@@ -1,20 +1,24 @@
 /* eslint-disable @next/next/no-img-element */
+'use client'
+import { usePathname } from "next/navigation";
 import styles from "../styles/AppBar.module.scss"; // Import the CSS module
 
 import Link from "next/link";
 
 export default function AppBar() {
+  const pathname = usePathname()
+
   return (
-    <header className={styles.header}> {/* Use the generated class name */}
-      <div className={styles["header-bar"]}></div> {/* Use bracket notation for hyphenated class names */}
-      <div className={styles["header-main-div"]}> {/* Use bracket notation for hyphenated class names */}
+    <header className={styles.header}>
+      <div className={styles["header-bar"]}></div>
+      <div className={styles["header-main-div"]}>
         <img
-          src="orion-logo-header.svg"
+          src={pathname === "/quemSomos" ? "/bandeira-gptw.svg" : "/orion-logo-header.svg"}
           alt="Orion Arquitetura"
-          width={184}
+          className={styles.logo}
         />
 
-        <nav className={styles["header-nav"]}> {/* Use bracket notation for hyphenated class names */}
+        <nav className={styles["header-nav"]} style={pathname === "/quemSomos" ? {paddingTop: "30px"} : {}}>
           <ul className={styles.list}>
             <li>
               <Link href={"/"}>Home</Link>
